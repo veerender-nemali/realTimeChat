@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    padding: 0;   
+    /* background-color: #333; */
+}
+
+.container-0{
+display: flex;
+justify-content: center;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* background-color: #333; */
+/* color: white; */
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+}
+
+.for-container-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: yellow; */
+}
+
+.container-1{
+    width: 60%;
+    height: 500px;
+    overflow-y: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    border-radius: 10px;
+    background-image: url("/images/background.png");
+    padding-bottom: 0.5%;
+}
+
+
+.message{
+    margin: 5px 7px 1px 7px;
+    padding: 6px;
+    border-radius: 25px;
+    margin-top: 3.5px;
+    margin-bottom: 3px;
+    word-break: break-all;
+}
+
+.right{
+    float: right;
+    clear: both;
+    background-color: white;
+    color: #333;
+}
+.left{
+    float: left;
+    clear: both;
+    margin-bottom: 3px;
+    background-color: #52a5a8;
+    color: white;
+}
+.middle{
+    text-align: center;
+    clear: both;
+    color: white;
+    margin: 10px 0px;
+    display: block;
+    font-size: 15px;
+    /* background-color: #52a5a8; */
+}
+
+#send-container{
+    width : 55%;
+    /* max-width: 55%; */
+    /* background-color: red; */
+    margin-top: 5px;
+    border: 2px solid rgb(65, 58, 58); 
+    border-radius: 20px;
+}
+
+#messageInp{
+    /* width: 91.3%; */
+    position: absolute;
+    width: 50%;
+    border: none;
+    outline: none;
+    /* background: none; */
+    /* background-color: chocolate; */
+    padding: 4px;
+    margin-left:10px;
+}
+
+.btn{
+    float: right;
+    border:none;
+    border-radius: 10px;
+    background: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    padding: 2px 12px;
+    /* background-color: yellow; */
+}
+
+h5{
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width: 380px) {
+    .container-0{
+        font-size: 13px;
+        margin: 10px 0;
+    }
+    .container-1{
+        width: 80% ;
+        font-size: 12px;
+        height: 480px;
+    }
+    #send-container{
+        min-width: 70%;
+        margin-top: 8px;
+    }
+    #messageInp{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 380px) {
+    
+    .container-1{
+        width: 80%;
+        font-size: 12px;
+    }
+    #send-container{
+        width: 75%;
+        margin-top: 8px;
+    }
+    #messageInp{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .container-1{
+        width: 65%;
+        font-size: 14px;
+    }
+    #send-container{
+        width: 62%;
+        margin-top: 5px;
+    }
+    #messageInp{
+        width: 55%;
+    }
+}
